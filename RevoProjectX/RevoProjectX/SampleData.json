@@ -1,0 +1,85 @@
+﻿{
+  "PartyTemplate.xaml": {
+    "Name": "Special Event",
+    "City": "MELBOURNE",
+    "Department": "Marketing",
+    "Color": "Red",
+    "Capacity": "29 %",
+    "Price": 243,
+    "Men": "71 %",
+     "Ladies": "29 %",
+    "Line": "man2.png",
+     "Background": "party4.jpg"
+  },
+
+  "ListPartyPage.xaml": [
+    {
+      "Name": "Scotch Club",
+      "City": "MELBOURNE",
+      "Department": "Marketing",
+      "Color": "Red",
+      "Capacity": "29 %",
+      "Price": 243,
+      "Men": "60 %", 
+      "Ladies": "40 %",
+      "Line": "man2.png",
+       "Background": "party4.jpg"
+
+    },
+    {
+      "Name": "PassCapacity",
+      "City": "SIDNEY",
+      "Department": "Design",
+      "Capacity": "32 %",
+      "Price": "Free",
+      "Men": "85 %", 
+      "Ladies": "15 %",
+      "Line": "man3.png",
+       "Background": "party2.jpg"
+    },
+    {
+      "Name": "Ride Club",
+      "City": "HOBART",
+      "Department": "Accounts",
+      "Capacity": "58 %",
+      "Price": 267,
+      "Men": "75 %", 
+      "Ladies": "25 %",
+      "Line": "man1.png",
+       "Background": "party4.jpg"
+    },
+    {
+      "Name": "Gorge Tach",
+      "City": "NEWCASTLE",
+      "Department": "Design",
+      "Capacity": "29 %",
+      "Price": 127,
+      "Men": "33 %",
+       "Ladies": "67 %",
+      "Line": "man3.png",
+       "Background": "party2.jpg"
+    },
+    {
+      "Name": "Cristina Maciel",
+      "City": "HOBART",
+      "Department": "Mobile Dev.",
+      "Capacity": "32 %",
+      "Price": 80,
+      "Men": "76 %",
+       "Ladies": "24 %",
+       "Line": "man1.png", "Background": "party4.jpg"
+    },
+    {
+      "Name": "Simon Deuva",
+      "City": "MELBOURNE",
+      "Department": "Media",
+      "Capacity": " 58 %",
+      "Price": 420,
+      "Men": "68 %", 
+      "Ladies": "32 %",
+      "Line": "man2.png",
+       "Background": "party2.jpg"
+    }
+  ]
+
+}
