@@ -15,5 +15,6 @@ namespace RevoProjectX.Helpers
         public static readonly string ChallengesUpdated = "ChallengesUpdated";
         public static readonly string AuthenticationComplete = "AuthenticationComplete";
         public static readonly string UserAuthenticated = "UserAuthenticated";
+
     }
 }
