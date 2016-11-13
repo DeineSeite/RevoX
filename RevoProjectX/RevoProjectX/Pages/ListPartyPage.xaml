@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:RevoProjectX.Pages"
+             xmlns:vm="clr-namespace:RevoProjectX.ViewModels;assembly=RevoProjectX"
+             
              xmlns:revoProjectX="clr-namespace:RevoProjectX;assembly=RevoProjectX"
              x:Class="RevoProjectX.Pages.ListPartyPage">
     <ContentPage.Content>
-        <Grid>
+        <Grid >
+            <Grid.BindingContext>
+                <vm:ListPartyPageViewModel></vm:ListPartyPageViewModel>
+            </Grid.BindingContext>
 
             <!--<Image Opacity="1"
 				   x:Name="img"
@@ -14,7 +19,7 @@
 
             <StackLayout >
 
-                <ListView ItemsSource="{Binding .}" 
+                <ListView ItemsSource="{Binding PartyCollection}" 
 						  SeparatorVisibility="None"
 						  BackgroundColor="Transparent"
 						  SeparatorColor="#DFDFDF"

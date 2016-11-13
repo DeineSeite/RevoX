@@ -83,7 +83,6 @@
         </Style>
 
         <Style x:Key="MessageEntryStyle" TargetType="Label">
-            <Setter Property="HorizontalTextAlignment" Value="FillAndExpand"/>
             <Setter Property="FontAttributes" Value="Bold"/>
         </Style>
 </ResourceDictionary>

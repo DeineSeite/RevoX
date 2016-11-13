@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RevoProjectX.Pages;
 using Xamarin.Forms;
 
 namespace RevoProjectX
@@ -12,12 +13,17 @@ namespace RevoProjectX
         public MainPage()
         {
 
-            var navigationPage = new NavigationPage(new MainPage());
-            navigationPage.Icon = "icon.png";
-            navigationPage.Title = "Schedule";
+            var navigationPage = new NavigationPage(new ListPartyPage())
+            {
+                Icon = "lock.png",
+                Title = "Schedule"
+            };
+            var navigationPage2 = new NavigationPage(new RewardNotification());
+            navigationPage2.Icon = "icon.png";
+            navigationPage2.Title = "List";
 
-            Children.Add(new StartPage());
             Children.Add(navigationPage);
+            Children.Add(navigationPage2);
            // StartPage();
                 
         }

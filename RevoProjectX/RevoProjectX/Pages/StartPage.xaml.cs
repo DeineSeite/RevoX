@@ -36,24 +36,22 @@ namespace RevoProjectX
 
         private async void AnimateView()
         {
-
-            await FadeEffect(loginT, 1500);
-            await FadeEffect(PasswordT, 2000);
-            await FadeEffect(orSignTxt, 2500);
-            await FadeEffect(fbBtn, 3000);
-            await FadeEffect(nextBtn, 3500);
-        }
-
-        private async Task FadeEffect(View view, uint duration, double opacity = 1)
-        {
             await Task.Delay(300);
-            await view.ScaleTo(1, (uint) App.AnimationSpeed, Easing.SinIn);
+            await logoImg.ScaleTo(0.9, (uint)App.AnimationSpeed, Easing.SinIn);
+            await loginT.ScaleTo(1, (uint)App.AnimationSpeed, Easing.SinIn);
+            await PasswordT.ScaleTo(1, (uint)App.AnimationSpeed, Easing.SinIn);
+            await signUpBtn.ScaleTo(1, (uint)App.AnimationSpeed, Easing.SinIn);
+            await orSignTxt.ScaleTo(1, (uint)App.AnimationSpeed, Easing.SinIn);
+            await fbBtn.ScaleTo(1, (uint)App.AnimationSpeed, Easing.SinIn);
+            await nextBtn.ScaleTo(1, (uint)App.AnimationSpeed, Easing.SinIn);
+         
         }
+
 
 
         private async void SignUpBtn_OnClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage(), true);
+           App.Instance.SetMainPage(new MainPage());
         }
 
     }

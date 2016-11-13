@@ -9,8 +9,8 @@
 				Source="image_bg.png"
 				Aspect="AspectFill"/>
             <StackLayout  VerticalOptions="FillAndExpand" Grid.Row="0" Margin="10,50,10,0">
-                <Image x:Name="logoImg" WidthRequest="200" Opacity="1" Source="logo_revo.png" Scale="0.8"/>
-                    <RelativeLayout x:Name="loginT"  VerticalOptions="Center" Margin="0,50,0,0" >
+                <Image x:Name="logoImg"  WidthRequest="200" Opacity="1" Source="logo_revo.png" Scale="0"/>
+                    <RelativeLayout x:Name="loginT" Scale="0"  VerticalOptions="Center" Margin="0,50,0,0" >
                     <StackLayout
       RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=8}"
       RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=8}"
@@ -22,7 +22,7 @@
                         <Entry  BackgroundColor="Transparent" PlaceholderColor="White" TextColor="White" Text="Login" HorizontalOptions="FillAndExpand"></Entry>
                     </StackLayout>
                 </RelativeLayout>
-                    <RelativeLayout x:Name="PasswordT" VerticalOptions="Center">
+                    <RelativeLayout x:Name="PasswordT" Scale="0" VerticalOptions="Center">
                     <StackLayout
       RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=8}"
       RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=8}"
@@ -34,8 +34,8 @@
                     </StackLayout>
                 </RelativeLayout>
 
-                <Button x:Name="signUpBtn" Clicked="SignUpBtn_OnClicked" Text="Sign up" TextColor="White" BackgroundColor="#2196F3" Margin="60,20,50,0" HeightRequest="40" VerticalOptions="Center"></Button>
-                <StackLayout x:Name="orSignTxt" VerticalOptions="EndAndExpand" Margin="0,-5,0,50">
+                <Button x:Name="signUpBtn" Scale="0" Clicked="SignUpBtn_OnClicked" Text="Sign up" TextColor="White" BackgroundColor="#2196F3" Margin="60,20,50,0" HeightRequest="40" VerticalOptions="Center"></Button>
+                    <StackLayout x:Name="orSignTxt" Scale="0" VerticalOptions="EndAndExpand" Margin="0,-5,0,50">
                     <StackLayout Orientation="Horizontal" Margin="0,0,0,0" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
                         <StackLayout Orientation="Horizontal">
                             <BoxView BackgroundColor="White" VerticalOptions="Center"  HeightRequest="1"></BoxView>
@@ -46,8 +46,8 @@
                             <BoxView BackgroundColor="White" VerticalOptions="Center" HeightRequest="1"></BoxView>
                         </StackLayout>
                     </StackLayout>
-                        <Button x:Name="fbBtn" Clicked="SignUpBtn_OnClicked"  Text="Facebook" TextColor="White" BackgroundColor="#0D47A1" Margin="70,10,70,5" HeightRequest="40" VerticalOptions="Center"></Button>
-                        <Label x:Name="nextBtn" TextColor="White" HorizontalOptions="Center" Text="Not ready to Sign Up? Explore the app" 
+                        <Button x:Name="fbBtn" Scale="0" Clicked="SignUpBtn_OnClicked"  Text="Facebook" TextColor="White" BackgroundColor="#0D47A1" Margin="70,10,70,5" HeightRequest="40" VerticalOptions="Center"></Button>
+                        <Label x:Name="nextBtn" Scale="0" TextColor="White" HorizontalOptions="Center" Text="Not ready to Sign Up? Explore the app" 
 					FontAttributes="Bold" FontSize="13" />
                 </StackLayout>
             </StackLayout>

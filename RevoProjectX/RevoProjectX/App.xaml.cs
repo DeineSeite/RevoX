@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using RevoProjectX.Pages;
 using Xamarin.Forms;
 
 namespace RevoProjectX
@@ -20,12 +20,17 @@ namespace RevoProjectX
             }
         }
 
+        public void SetMainPage(Page page)
+        {
+            MainPage = page;
+        }
+
         public App()
         {
             _instance = this;
             InitializeComponent();
 
-            MainPage =new NavigationPage(new StartPage());
+            MainPage =new StartPage();
         }
 
         protected override void OnStart()
