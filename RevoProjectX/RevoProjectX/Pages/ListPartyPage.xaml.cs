@@ -12,7 +12,11 @@ namespace RevoProjectX.Pages
     {
         public ListPartyPage()
         {
+           
             InitializeComponent();
+            var s = "logo-revo.png";
+            NavigationPage.SetTitleIcon(this, s);
+            Title = "REVO";
         }
     }
 }

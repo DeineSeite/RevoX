@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dark="clr-namespace:Xamarin.Forms.Themes;assembly=Xamarin.Forms.Theme.Dark"
              x:Class="RevoProjectX.App">
 	<Application.Resources>
-        <ResourceDictionary>
+        <ResourceDictionary MergedWith="dark:DarkThemeResources">
         <!---Glossy Styles-->
         <Color x:Key="CardBackgroundColor">#77000000</Color>
         <Color x:Key="MessageBoxBackgroundColor">#99212331</Color>
@@ -28,8 +29,12 @@
 			<Color x:Key="MessageColor">#546e7a</Color>
 			-->
         <Color x:Key="EntryBackgroundColor">#7778909c</Color>
-
-        <Style x:Key="CardStyle" TargetType="Grid">
+            
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="Color.Black"/>
+                <Setter Property="BarTextColor" Value="Color.White"/>
+            </Style>
+            <Style x:Key="CardStyle" TargetType="Grid">
             <Setter Property="HeightRequest" Value="80"/>
             <Setter Property="BackgroundColor" Value="{DynamicResource CardBackgroundColor}"/>
         </Style>

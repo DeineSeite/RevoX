@@ -23,6 +23,9 @@ namespace RevoProjectX.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            var t = typeof(ImageCircle.Forms.Plugin.iOS.ImageCircleRenderer);
+            var x = typeof(Xamarin.Forms.Themes.DarkThemeResources);
+            x = typeof(Xamarin.Forms.Themes.iOS.UnderlineEffect);
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

@@ -20,6 +20,8 @@ namespace RevoProjectX.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            var x = typeof(Xamarin.Forms.Themes.DarkThemeResources);
+            x = typeof(Xamarin.Forms.Themes.Android.UnderlineEffect);
             LoadApplication(new App());
         }
     }

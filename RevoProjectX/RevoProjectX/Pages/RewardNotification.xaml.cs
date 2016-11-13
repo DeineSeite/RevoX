@@ -13,6 +13,7 @@ namespace RevoProjectX.Pages
         public RewardNotification()
         {
             InitializeComponent();
+             Title = "REVO";
         }
     }
 }
